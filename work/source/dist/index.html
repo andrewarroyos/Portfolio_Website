@@ -9,7 +9,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>PK — Projects &amp; Notes</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232453ef'/%3E%3Cpath d='M19 49V15h15c9 0 14 5 14 13s-5 13-14 13h-7v8zm8-16h7c4 0 6-2 6-5s-2-5-6-5h-7z' fill='white'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=beam-1">
+  <link rel="stylesheet" href="styles.css?v=socials-1">
   <script src="carousel.js?v=1" defer></script>
   <script src="scroll-beam.js?v=1" defer></script>
 </head>
@@ -23,6 +23,7 @@
         <a href="#work">Work</a>
         <a href="#writing">Writing</a>
         <a href="#about">About</a>
+        <a href="#links">Links</a>
       </nav>
     </header>
 
@@ -32,10 +33,18 @@
           <p class="eyebrow"><span class="small-rule" aria-hidden="true"></span>My personal corner of the internet</p>
           <h1 id="intro-title">Building things.<br><span>Writing about my experiences.</span></h1>
         </div>
+        <figure class="intro-portrait">
+          <!-- Replace portrait-placeholder.svg with your photo's local path, e.g. portrait.jpg,
+               and change alt to "Andrew Arroyos". Recommended image: 800 x 1000 px. -->
+          <div class="portrait-frame">
+            <img src="portrait-placeholder.svg" alt="Placeholder for Andrew's future portrait" width="800" height="1000" decoding="async">
+          </div>
+          <figcaption><span>Andrew Arroyos</span><span>PK / Computer science</span></figcaption>
+        </figure>
         <div class="intro-copy">
           <p>I'm Andrew. I go by PK online.</p>
           <p>Hi, I’m Andrew—a computer science student at <b>California State University, Long Beach</b> who enjoys building things that make everyday life a little easier. Working in warehouse operations at <b>STRAYE</b> sparked my interest in turning frustrating, repetitive tasks into useful software.
-         I’m still learning, experimenting, and figuring things out, and this website is where I share what I’m building along the way. Outside of school and work, you’ll usually find me gaming, exploring somewhere new with my camera, enjoying a matcha, or spending time with my dog, Suki.Thanks for stopping by—I’m glad you’re here.
+         I’m still learning, experimenting, and figuring things out, and this website is where I share what I’m building along the way. Outside of school and work, you’ll usually find me gaming, exploring somewhere new with my camera, enjoying a matcha, or spending time with my dog, Suki. Thanks for stopping by—I’m glad you’re here.
             Check out my GitHub at @ <a class="github-link" href="https://github.com/andrewarroyos">https://github.com/andrewarroyos</a>
           </p>
           <p class="location">Orange County, California</p>
@@ -116,6 +125,24 @@
         <div class="section-content about-content">
           <p class="about-lead">Computer science student.<br>Hands-on problem solver.</p>
           <div class="about-columns"><div><p>I'm studying computer science at California State University, Long Beach. Working in warehouse operations has given me a practical place to apply what I'm learning: finding repetitive work and building tools to make it easier.</p><p>I'm interested in backend development, automation, and understanding how software works from the inside out.</p></div><div class="about-sidebar"><h3>In the toolkit</h3><p>Python, C++, JavaScript, Git</p><h3>Away from the keyboard</h3><p>Photography, travel, and games.</p></div></div>
+        </div>
+      </section>
+      <section class="indexed-section links-section" id="links" aria-labelledby="links-title">
+        <div class="section-label"><span class="section-number">04</span><h2 id="links-title">Find me online</h2><p>Around the internet.<br>All in one place.</p></div>
+        <div class="section-content links-content">
+          <p class="links-lead">Let's stay connected<span aria-hidden="true">.</span></p>
+          <p class="links-intro">Explore what I'm building and follow along.</p>
+          <!-- Add profiles by copying a list item and updating its URL, icon, name,
+               handle, and description. Use only your own verified profile URLs. -->
+          <ul class="social-links" aria-label="Social profiles and links">
+            <li>
+              <a class="social-card" href="https://github.com/andrewarroyos">
+                <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.64 1.22 3.28.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15A10.8 10.8 0 0 1 12 6.17c.96 0 1.92.13 2.82.38 2.15-1.46 3.09-1.15 3.09-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.04.76 2.1v3.08c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg></span>
+                <span class="social-card-copy"><span class="social-name">GitHub</span><span class="social-handle">@andrewarroyos</span><span class="social-description">Code, experiments &amp; projects</span></span>
+                <span class="social-arrow" aria-hidden="true">&#8599;</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
