@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PK - Andrew Arroyos. Software projects, practical automation, and notes from studying computer science.">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>PK — Projects &amp; Notes</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232453ef'/%3E%3Cpath d='M19 49V15h15c9 0 14 5 14 13s-5 13-14 13h-7v8zm8-16h7c4 0 6-2 6-5s-2-5-6-5h-7z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=beam-1">
+  <script src="carousel.js?v=1" defer></script>
+  <script src="scroll-beam.js?v=1" defer></script>
+</head>
+<body>
+  <canvas class="scroll-beam" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="identity" href="#top" aria-label="PK, back to top"><span class="wordmark">pk<span class="wordmark-dot">.</span></span><span class="identity-label">Andrew Arroyos<br><span>Projects &amp; notes</span></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="intro" id="top" aria-labelledby="intro-title">
+        <div class="intro-heading">
+          <p class="eyebrow"><span class="small-rule" aria-hidden="true"></span>A personal corner of the internet</p>
+          <h1 id="intro-title">Building useful things.<br><span>Writing things down.</span></h1>
+        </div>
+        <div class="intro-copy">
+          <p>I'm Andrew. I go by PK online.</p>
+          <p>I study computer science at California State University, Long Beach and build software around real, everyday work. This is where I keep the projects, ideas, and notes along the way.
+            Check out my GitHub at @ <a class="github-link" href="https://github.com/andrewarroyos">https://github.com/andrewarroyos</a>
+          </p>
+          <p class="location">Orange County, California</p>
+        </div>
+      </section>
+
+      <section class="indexed-section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-label"><span class="section-number">01</span><h2 id="work-title">Selected work</h2><p>Things I've built.<br>Things I'm figuring out.</p></div>
+        <div class="section-content project-carousel" role="region" aria-roledescription="carousel" aria-label="Selected projects">
+          <div class="carousel-toolbar">
+            <p>Drag to explore <span aria-hidden="true">↔</span> <span class="carousel-hint">Click a project to read more.</span></p>
+            <div class="carousel-controls" hidden>
+              <span class="carousel-count" aria-live="polite" aria-atomic="true">01 / 03</span>
+              <button type="button" class="carousel-prev" aria-label="Previous project" aria-controls="project-track">←</button>
+              <button type="button" class="carousel-next" aria-label="Next project" aria-controls="project-track">→</button>
+            </div>
+          </div>
+          <div class="project-list" id="project-track" tabindex="0" aria-label="Projects. Drag, swipe, or use the left and right arrow keys.">
+          <details class="project" name="projects" id="picking-pipeline">
+            <summary><span class="project-card-number" aria-hidden="true">01</span>
+              <div class="project-heading"><span class="project-category">Operations / automation</span><h3>Warehouse picking pipeline</h3><p>Turning order exports into a picking list people can actually use.</p><div class="tags"><span>Python</span><span>CSV</span><span>PDF</span></div></div>
+              <div class="project-aside"><span class="status">Built</span><span class="project-read">View project <span class="expand-icon" aria-hidden="true">+</span></span></div>
+            </summary>
+            <div class="project-body">
+              <p class="detail-intro">A practical automation project for the warehouse workflow at STRAYE.</p>
+              <dl class="project-facts"><div><dt>The problem</dt><dd>Order exports need to become clear, organized instructions for the people picking and packing them.</dd></div><div><dt>The approach</dt><dd>A Python workflow transforms CSV data into picking PDFs, organizing orders by warehouse zones and separating different picking needs.</dd></div><div><dt>The focus</dt><dd>Readable output, consistent ordering, and less repetitive spreadsheet work.</dd></div></dl>
+            </div>
+          </details>
+          <details class="project" name="projects" id="blaze-sort">
+            <summary><span class="project-card-number" aria-hidden="true">02</span>
+              <div class="project-heading"><span class="project-category">Operations / tooling</span><h3>Blaze Sort</h3><p>A repeatable workflow for the daily task of sorting orders.</p><div class="tags"><span>Python</span><span>Order processing</span></div></div>
+              <div class="project-aside"><span class="status">Built</span><span class="project-read">View project <span class="expand-icon" aria-hidden="true">+</span></span></div>
+            </summary>
+            <div class="project-body">
+              <p class="detail-intro">Turning a recurring manual task into a consistent part of the workday.</p>
+              <dl class="project-facts"><div><dt>The problem</dt><dd>Sorting orders by hand adds repetitive work before the rest of the warehouse process can move forward.</dd></div><div><dt>The approach</dt><dd>Automate the sorting workflow so orders can be organized using a consistent set of rules.</dd></div><div><dt>The focus</dt><dd>Practical time savings and a workflow that fits the people already doing the job.</dd></div></dl>
+            </div>
+          </details>
+          <details class="project" name="projects" id="restock-planner">
+            <summary><span class="project-card-number" aria-hidden="true">03</span>
+              <div class="project-heading"><span class="project-category">Inventory / planning</span><h3>Restock planner</h3><p>Exploring how sales and stock data can inform better reorders.</p><div class="tags"><span>Python</span><span>Inventory</span><span>Data modeling</span></div></div>
+              <div class="project-aside"><span class="status status-planning">In planning</span><span class="project-read">View project <span class="expand-icon" aria-hidden="true">+</span></span></div>
+            </summary>
+            <div class="project-body">
+              <p class="detail-intro">A project in progress, starting with the data and the decisions it needs to support.</p>
+              <dl class="project-facts"><div><dt>The question</dt><dd>How much should a business reorder when sales change over time and new stock takes months to arrive?</dd></div><div><dt>The approach</dt><dd>Bring current inventory, sales history, and outstanding purchase orders into a consistent set of CSV inputs.</dd></div><div><dt>Next step</dt><dd>Build and evaluate reorder recommendations that account for demand changes and incoming stock.</dd></div></dl>
+            </div>
+          </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="indexed-section writing-section" id="writing" aria-labelledby="writing-title">
+        <div class="section-label"><span class="section-number">02</span><h2 id="writing-title">The notebook</h2><p>Working notes on code,<br>systems, and learning.</p></div>
+        <div class="section-content notes-list">
+          <details class="note" name="notes" id="automate-the-repeatable-part">
+            <summary><div><div class="note-meta"><span>Automation</span><span class="draft-label">Draft</span></div><h3>Start with the repeatable part.</h3><p>On finding a useful first thing to automate.</p></div><span class="note-action" aria-hidden="true">Read <span>↗</span></span></summary>
+            <article class="note-body" aria-label="Start with the repeatable part, draft note">
+              <p>A good starting point for automation is a task someone already repeats: opening an export, rearranging columns, sorting rows, and making the same document again.</p>
+              <p>Before writing the script, map the process. What comes in? What decisions happen? What should the final output look like? The exceptions matter just as much as the normal path.</p>
+              <p>The useful result is a workflow someone can trust. A readable picking list, a clear error message, and a predictable file format can matter more than adding another feature.</p>
+            </article>
+          </details>
+          <details class="note" name="notes" id="learning-the-layer-underneath">
+            <summary><div><div class="note-meta"><span>Learning</span><span class="draft-label">Draft</span></div><h3>Understand the layer underneath.</h3><p>A habit for making technical ideas stick.</p></div><span class="note-action" aria-hidden="true">Read <span>↗</span></span></summary>
+            <article class="note-body" aria-label="Understand the layer underneath, draft note">
+              <p>When a tool makes something easy, there is still value in understanding the work it hides. An API call has a request and a response. A program becomes instructions. A database query expresses a question about data.</p>
+              <p>One way to learn is to follow a small example through the whole process. Identify the input, trace what happens to it, and explain the output without skipping the unfamiliar steps.</p>
+              <p>Then change one thing. Predict what will happen before running it. The difference between the prediction and the result is often the most useful part of the exercise.</p>
+            </article>
+          </details>
+          <p class="notebook-footnote">An open notebook. Room for ideas that are still taking shape.</p>
+        </div>
+      </section>
+
+      <section class="indexed-section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-label"><span class="section-number">03</span><h2 id="about-title">A little context</h2></div>
+        <div class="section-content about-content">
+          <p class="about-lead">Computer science student.<br>Hands-on problem solver.</p>
+          <div class="about-columns"><div><p>I'm studying computer science at California State University, Long Beach. Working in warehouse operations has given me a practical place to apply what I'm learning: finding repetitive work and building tools to make it easier.</p><p>I'm interested in backend development, automation, and understanding how software works from the inside out.</p></div><div class="about-sidebar"><h3>In the toolkit</h3><p>Python, C++, JavaScript, Git</p><h3>Away from the keyboard</h3><p>Photography, travel, and games.</p></div></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span class="footer-mark">pk.</span><p>Always a work in progress.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+</body>
+</html>
